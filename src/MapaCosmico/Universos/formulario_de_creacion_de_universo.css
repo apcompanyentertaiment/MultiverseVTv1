@@ -1,0 +1,18 @@
+.universe-form__overlay{position:fixed;inset:0;z-index:80;pointer-events:none}
+.universe-form__overlay.is-open{pointer-events:auto}
+.universe-form__backdrop{position:absolute;inset:0;background:rgba(0,0,0,.55);backdrop-filter:blur(4px);opacity:1;transition:opacity .2s ease}
+.universe-form__sheet{position:absolute;inset:6% 8%;border:1px solid rgba(255,255,255,.12);border-radius:14px;background:linear-gradient(180deg,rgba(16,18,24,.88),rgba(8,10,14,.9));box-shadow:0 30px 60px rgba(0,0,0,.6),inset 0 1px 0 rgba(255,255,255,.06);color:#fff;display:flex;flex-direction:column;overflow:hidden}
+.universe-form__header{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;border-bottom:1px solid rgba(255,255,255,.08)}
+.universe-form__close{background:transparent;border:1px solid rgba(255,255,255,.14);color:#fff;border-radius:8px;width:36px;height:32px;cursor:pointer}
+.universe-form__tabs{display:flex;gap:8px;padding:12px 16px;border-bottom:1px solid rgba(255,255,255,.08);overflow:auto}
+.universe-form__tab{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);color:#fff;border-radius:999px;padding:8px 12px;cursor:pointer}
+.universe-form__tab.is-active{background:rgba(255,255,255,.16)}
+.universe-form__content{flex:1;overflow:auto;padding:16px}
+.form-section{display:grid;gap:14px;grid-template-columns:1fr}
+.form-field label{display:block;margin-bottom:6px;color:#dcdcdc}
+.form-field input,.form-field textarea{width:100%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);color:#fff;border-radius:8px;padding:10px}
+.form-section--placeholder{display:grid;place-items:center;min-height:260px;opacity:.8}
+.universe-form__footer{padding:12px 16px;border-top:1px solid rgba(255,255,255,.08);display:flex;justify-content:flex-end;gap:10px}
+.btn{border-radius:8px;padding:10px 14px;border:1px solid rgba(255,255,255,.16);cursor:pointer}
+.btn--ghost{background:transparent;color:#fff}
+.btn--primary{background:linear-gradient(180deg,#3a7bff,#2157d8);color:#fff;border-color:rgba(255,255,255,.18)}

@@ -1,0 +1,88 @@
+/* Overlay y animaciones elegantes del panel admin */
+.admin-panel__overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  pointer-events: none; /* bloqueado por defecto, activamos cuando is-open */
+}
+.admin-panel__overlay.is-open {
+  pointer-events: auto;
+}
+
+.admin-panel__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.0);
+  transition: background 220ms ease;
+}
+.admin-panel__overlay.is-open .admin-panel__backdrop {
+  background: rgba(0,0,0,0.48);
+}
+
+.admin-panel__sheet {
+  position: absolute;
+  top: 0; right: 0; bottom: 0;
+  width: min(420px, 92vw);
+  background: rgba(14,14,16,0.86);
+  border-left: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+  color: #f0f0f0;
+  transform: translateX(100%);
+  transition: transform 280ms cubic-bezier(.22,.61,.36,1);
+  box-shadow: -12px 0 32px rgba(0,0,0,0.55);
+}
+.admin-panel__overlay.is-open .admin-panel__sheet {
+  transform: translateX(0);
+}
+
+.admin-panel__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 18px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.admin-panel__header h3 {
+  margin: 0;
+  font-size: 18px;
+}
+.admin-panel__close {
+  background: transparent;
+  border: none;
+  color: #cfcfcf;
+  font-size: 22px;
+  line-height: 1;
+  padding: 6px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.admin-panel__close:hover {
+  background: rgba(255,255,255,0.06);
+}
+
+.admin-panel__content {
+  padding: 14px 16px;
+}
+
+.admin-action {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: linear-gradient(180deg, rgba(28,28,32,0.8), rgba(18,18,20,0.8));
+  color: #e6edff;
+  cursor: pointer;
+  transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
+}
+.admin-action .icon { font-size: 18px; }
+.admin-action:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.35);
+  background: linear-gradient(180deg, rgba(34,34,40,0.95), rgba(20,20,24,0.9));
+}
+.admin-action:active {
+  transform: translateY(0);
+}

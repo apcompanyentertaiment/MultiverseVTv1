@@ -1,0 +1,35 @@
+necesito que me ayudes a crear un texto para describir una pagina web, mas especifico será el texto de la presentación del home, la pagina web es para albergar una experiencia web, iniciando por la serie animada "Corredor Cósmico" una serie antológica que cuenta historias relativamente cortas de distintos creadores de contenido virtuales "Vtubers" las historias estarán enfocadas en explorar el mundo, la fantasía y la psicología detrás del personaje que han creado para internet, seguido de esto la pagina alberga un mapa cósmico, cada punto blanco de la pagina "mapa cósmico" es un universo, una historia, el jugador deberá de ir resolviendo acertijos para ir desbloqueando información de cada universo, los personajes que lo habitan, los sucesos históricos que han sucedido, quienes están vivos y quienes están muertos, cada que se desbloquea un universo se da una pista para ir al siguiente y desbloquearlos todos, a su ves por seguir distintas rutas se iran desbloqueando insignias que el usuario podra coleccionar y compartir con la comunidad en la pagina "comunidad" tambien habra una pagina llamada "El juego" en donde el usuario podra ir explorando un gran mundo 2D, haciendo misiones que le ayudarana completar el mapa cosmico.
+
+Sobre la Serie "Corredor Cósmico"
+1. La serie realmente no tendrá una temática definida, al cada capitulo ubicarse en un universo diferente se aprovechara para jugar con varios estilos narrativos, aunque si tuviera que definir la serie en una oración seria "Explorar el alma de aquellos seres que por lo general tomamos como perfectos pero al final del día siguen siendo humanos"
+2. Pretendo que los espectadores sientan empatia por los personajes, hacerlos conocer sus vidas para que cada decicion que tomen se sienta con un peso significativo, cada victoria, cada perdida, que sientan y que se pregunten con cada episodio "Cuanto de nuestra moral quemaremos hoy por sobrevivir un dia mas" quiero que los espectadores valoren estas historias y puedan tomarlos como relatos de vida que se quedaran con ellos mucho tiempo despues de haberlos visto.
+3. Esta serie es un tributo a las Vtubers de habla español, de los 12 capitulos planeados los primeros 5 que ya estan en etapas avanzadas de desarrollo empezaran con vtubers poco conocidos de la comunidad hispana para poco a poco con cada capitulo contar historias de vtubers cada vez mas conocidas, el porque se hizo esto es por la capacidad de experimentar con personajes poco conocidos y establecer de que va la serie, algo que seria mucho mas dificil con vtubers mas conocidas y cuya personalidad ya esa tan grabada en la comunidad que puede resultar dificil verlas en historias que muestren vulnerabilidad
+
+Sobre la Experiencia Web y el Mapa Cósmico
+1. Ok, como mencione antes cada episodio de la serie esta ubicado en un universo diferente los unos de los otros, asi que si algun espectador se quedo con ganas de saber mas del mundo de 1 historia en especifico debera de desbloquear el universo en especifico de esa historia, en el camino podra ir viendo mas historias para nutrir su curiosidad y asi que cuando llegue al universo que busco al principio sienta que valio la pena recorrer el camino y ganar un logro en la web y sienta curiosidad por recorrer mas, explorar mas.
+2. cada acertijo es diferente, y mas que un acertijo es un puzzle, un rompecabezas que debera armarse de distinta manera y que esta relacionada con el tipo de historia de el universo en especifico que esta desbloqueando, por lo que creo que debe de sentirse gratificante al hacer al usuario parte de la historia
+3. ok, digamos que se quiere desbloquear el universo M28-492 un universo donde la raza humana colonizo marte durante la era del imperio español, se le mostrara un pequeño fragmento de la historia al usuario y el puzzle sera asi:
+Mecánica del Puzzle
+Fragmentos dispersos:
+El jugador recibe varios fragmentos de un mapa antiguo (tipo piezas de rompecabezas), cada uno con símbolos coloniales (cruces, escudos, galeones) mezclados con símbolos marcianos (cúpulas, cráteres, canales).
+Instrucciones codificadas:
+Junto a los fragmentos hay un pergamino en castellano antiguo con pistas, por ejemplo:
+“El sol rojo guía siempre al oeste.”
+“Donde el canal se bifurca, allí empieza la ruta.”
+“La cruz debe mirar hacia la tierra que nunca duerme.”
+Estas pistas ayudan al jugador a orientar y colocar las piezas en la dirección correcta.
+Condición de victoria:
+Al ensamblar el mapa correctamente, se revela una marca escondida (un símbolo imperial o un sello marciano) que desbloquea la historia completa
+4. bueno son mas de lógica, y si pienso ir aumentando un poco el nivel a medida que el usuario se acerque a los confines del mapa cósmico
+5. De echo justo que lo mencionas si lo hay, justamente un personaje llamado AP es el guia de la serie, en el cap 1 explica al espectador como funciona el "corredor cosmico" y lo guia por las distintas historias, asi que si podria agregarlo aqui como guia, que buena idea
+
+Sobre la Sección de la Comunidad y "El Juego"
+1. Bueno en si es una red solcial como twitter en donde podran publicar logros y textos sencillos
+2.Seran medallas, cada una tematizada con un grupo de universos para simbolizar la ruta que el jugador tomo
+3. principalmente combate por turnos, de echo justamente las insignias serviran como potenciadores, aunque el usuario podra explorar un mapa para ir encontrando insignias nuevas propias de este mapa que daran pistas para universos inaccesibles a traves de solamente navegar el mapa
+4. el juego sera un 2D de mundo abierto pixel art
+
+Sobre la Identidad de la Página
+1. "El Mapa del Corredor Cósmico" es el título provisional
+2. Vtubers, Historias, Fantasía, Exploración, Ciencia Ficcion, Aventura, Puzzles
+3. "Listo para iniciar tu viaje? si la respuesta es no, entonces Bien, Nunca nadie lo esta, pero es hora de comenzar"

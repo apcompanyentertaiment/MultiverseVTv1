@@ -1,0 +1,172 @@
+/* Estilos base existentes */
+.mapa-cosmico__container {
+  position: relative;
+  min-height: calc(100vh - var(--header-height, 64px));
+  padding: 24px;
+  color: #eaeaea;
+}
+
+.mapa-cosmico__content {
+  position: relative;
+  z-index: 1; /* por encima de partículas */
+}
+
+.mapa-cosmico__header h1 {
+  font-size: 28px;
+  margin: 0 0 6px;
+}
+
+.mapa-cosmico__subtitle {
+  color: #bdbdbd;
+  margin-bottom: 16px;
+}
+
+/* Fullscreen layout para centrar todo en el mapa */
+.mapa-cosmico__container {
+  position: fixed;
+  inset: 0; /* ocupa toda la ventana */
+  padding: 0; /* sin márgenes internos */
+  margin: 0; /* sin márgenes */
+  background: #000; /* fondo negro total */
+}
+
+.mapa-cosmico__content {
+  position: absolute;
+  inset: 0;
+  z-index: 1; /* por encima de partículas */
+  display: grid;
+}
+
+/* El contenedor del svg también ocupa todo */
+.mapa-cosmico__map {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.mapa-cosmico__svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  /* Hacer el SVG transparente para ver el canvas de partículas detrás */
+  background-color: transparent;
+  touch-action: none; /* pan/zoom custom */
+  cursor: grab;
+}
+.mapa-cosmico__svg.is-panning { cursor: grabbing; }
+
+/* El resto se mantiene, con grosores que no escalan */
+.orbits .orbit {
+  stroke: rgba(255, 255, 255, 0.4);
+  stroke-width: 0.8;
+  fill: none;
+  vector-effect: non-scaling-stroke;
+}
+.orbits .orbit--central { stroke: rgba(255,255,255,0.6); stroke-width: 1.2; }
+
+.rays .ray {
+  stroke: rgba(255, 255, 255, 0.25);
+  stroke-width: 0.7;
+  vector-effect: non-scaling-stroke;
+}
+
+.center .center-point {
+  fill: #ffffff;
+  filter: drop-shadow(0 0 4px rgba(255,255,255,0.65));
+}
+
+.nodes .node {
+  fill: #fff;
+  r: 3;
+  filter: drop-shadow(0 0 4px rgba(255,255,255,0.7));
+  transition: transform 120ms ease, filter 120ms ease;
+}
+.nodes .node:hover, .nodes .node:focus {
+  transform: scale(1.8);
+  filter: drop-shadow(0 0 8px rgba(255,255,255,0.9));
+}
+
+.random-links .random-link {
+  stroke: rgba(255,255,255,0.35);
+  stroke-width: 1.1;
+  vector-effect: non-scaling-stroke;
+}
+.random-links .random-endpoint {
+  fill: #ffffff;
+  transition: transform 120ms ease, filter 120ms ease;
+  filter: drop-shadow(0 0 6px rgba(255,255,255,0.7));
+}
+.random-links .random-endpoint:hover, .random-links .random-endpoint:focus {
+  transform: scale(1.9);
+  filter: drop-shadow(0 0 10px rgba(255,255,255,1));
+}
+
+/* Asegurar partículas detrás del contenido */
+.mapa-cosmico__container > canvas, .mapa-cosmico__container .particles {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+/* Animación de hover para los nodos */
+.node {
+  fill: #ffffff;
+  transition: transform 140ms ease, filter 140ms ease;
+  transform-origin: center;
+  transform-box: fill-box; /* necesario para SVG */
+}
+.node:hover,
+.node:focus-visible {
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.95));
+  transform: scale(1.7);
+}
+
+/* Contenedor del mapa para permitir overlays posicionados por porcentaje */
+.mapa-cosmico__map {
+  position: relative;
+}
+
+/* Asegura que el SVG no tape el panel y siga transparente */
+.mapa-cosmico__svg {
+  background-color: transparent; /* dejamos ver las partículas */
+}
+
+/* Área de impacto invisible para facilitar el hover (3x) */
+.node-hit {
+  fill: rgba(255,255,255,0.001); /* casi transparente para que reciba eventos */
+  stroke: none;
+}
+
+/* Empaquetador del nodo para que el hover sea del wrapper */
+.node-wrap:hover .node,
+.node-wrap:focus-within .node {
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.95));
+  transform: scale(1.7);
+}
+
+/* Botón flotante para Admin */
+.admin-fab {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: radial-gradient(120% 120% at 30% 20%, rgba(50,90,255,0.6), rgba(16,20,30,0.9));
+  color: white;
+  font-size: 22px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  z-index: 60;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.1);
+  transition: transform 160ms ease, box-shadow 160ms ease, background 200ms ease;
+}
+.admin-fab:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 36px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.15);
+}
+.admin-fab:active { transform: translateY(0); }
